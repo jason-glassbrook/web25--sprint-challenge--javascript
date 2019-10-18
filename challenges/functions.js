@@ -1,3 +1,11 @@
+/***************************************
+  TOOLS
+***************************************/
+
+function heading (content) {
+  console.log (`\n### ${content} ###\n`);
+}
+
 // ==== Callbacks ====  
 
 /* Step 1: Create a higher-order function

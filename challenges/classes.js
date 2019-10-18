@@ -1,3 +1,11 @@
+/***************************************
+  TOOLS
+***************************************/
+
+function heading (content) {
+  console.log (`\n### ${content} ###\n`);
+}
+
 // 1. Copy and paste your prototype in here and refactor into class syntax.
 
 // Test your volume and surfaceArea methods by uncommenting the logs below:
