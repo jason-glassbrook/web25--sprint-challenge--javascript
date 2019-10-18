@@ -101,7 +101,7 @@ heading ("-> REQUEST 1");
 const universities = graduates
   .map ((elem) => (elem.university))
   .sort ();
-console.log(universities);
+console.log (universities);
 
 /*******************
   Request 2
@@ -116,8 +116,10 @@ console.log(universities);
 
 heading ("-> REQUEST 2");
 
-const contactInfo = [];
-console.log(contactInfo);
+const contactInfo = graduates.map (
+  (elem) => (`${elem.first_name} ${elem.email}`)
+);
+console.log (contactInfo);
 
 /*******************
   Request 3
@@ -128,7 +130,7 @@ console.log(contactInfo);
 heading ("-> REQUEST 3");
 
 const unisWithUni = [];
-console.log(unisWithUni);
+console.log (unisWithUni);
 
 /***************************************
   ADVANCED Array Methods
@@ -156,7 +158,7 @@ const zooAnimals = [
 *******************/
 
 const displayNames = [];
-console.log(displayNames);
+console.log (displayNames);
 
 /*******************
   Request 2: .map()
@@ -165,7 +167,7 @@ console.log(displayNames);
 *******************/
 
 const lowCaseAnimalNames = [];
-console.log(lowCaseAnimalNames);
+console.log (lowCaseAnimalNames);
 
 /*******************
   Request 3: .filter() 
@@ -174,7 +176,7 @@ console.log(lowCaseAnimalNames);
 *******************/
 
 const lowPopulationAnimals = [];
-console.log(lowPopulationAnimals);
+console.log (lowPopulationAnimals);
 
 /*******************
   Request 4: .reduce() 
@@ -183,7 +185,7 @@ console.log(lowPopulationAnimals);
 *******************/
 
 const populationTotal = 0;
-console.log(populationTotal);
+console.log (populationTotal);
 
 /*******************
   STRETCH
