@@ -8,13 +8,17 @@ function heading (content , before = 1, after = 1) {
   );
 }
 
+/**************************************/
+
+heading ("CLASSES");
+
 /***************************************
   Task 1
   ------------------------------------
   Copy and paste your prototype in here and refactor into class syntax.
 ***************************************/
 
-heading ("CLASSES");
+heading ("-> CUBOID MAKER");
 
 class CuboidMaker
 {
@@ -61,5 +65,46 @@ console.log (cuboid.surfaceArea ());
 /***************************************
   Stretch
   ------------------------------------
-  Extend the base class CuboidMaker with a sub class called CubeMaker.  Find out the formulas for volume and surface area for cubes and create those methods using the dimension properties from CuboidMaker.  Test your work by logging out your volume and surface area.
+  Extend the base class CuboidMaker with a sub class called CubeMaker. 
+  Find out the formulas for volume and surface area for cubes and create those methods using the dimension properties from CuboidMaker. 
+  Test your work by logging out your volume and surface area.
 ***************************************/
+
+heading ("-> CUBE MAKER");
+
+class CubeMaker extends CuboidMaker
+{
+  constructor (attrs) {
+    super ({
+      length : attrs.length,
+      width  : attrs.length,
+      height : attrs.length
+    });
+  }
+  /*
+    I really shouldn't need to replace `volume()` and `surfaceArea()` because those formulas work for cubes (which are a specific subclass of cuboids)...
+    But for the sake of following the instructions, I'll do it.
+  */
+  volume () {
+    return (Math.pow (this.length , 3));
+  }
+  surfaceArea () {
+    return (6 * Math.pow (this.length , 2));
+  }
+}
+
+/*******************
+  testing
+*******************/
+
+const cube = new CubeMaker ({
+  length : 4
+});
+
+// Test your volume and surfaceArea methods by uncommenting the logs below:
+console.log (cube);
+// >>> CubeMaker {...}
+console.log (cube.volume ());
+// >>> 64
+console.log (cube.surfaceArea ());
+// >>> 96
