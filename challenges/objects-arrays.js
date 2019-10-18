@@ -10,6 +10,8 @@ function heading (content) {
   Objects
 ***************************************/
 
+heading ("OBJECTS");
+
 /* 
   Given the following information about dinosaurs, create 3 objects: 
   Use this pattern to create your objects: 
@@ -48,19 +50,22 @@ dinosaur[2] = {
 // Using your dinosaur objects, log answers to these questions:
 
 // How much did tyrannosaurus weigh?
-console.log();
+console.log (dinosaur[0].weight);
 
 // What was the diet of a velociraptor?
-console.log();
+console.log (dinosaur[2].diet);
 
 // How long was a stegosaurus?
-console.log();
+console.log (dinosaur[1].length);
 
 // What time period did tyrannosaurus live in?
-console.log();
+console.log (dinosaur[0].period);
 
 // Create a new roar method for the tyrannosaurus.  When called, return "RAWERSRARARWERSARARARRRR!" Log the result.
-console.log();
+dinosaur[0].roar = function () {
+  return ("RAWERSRARARWERSARARARRRR!");
+};
+console.log (dinosaur[0].roar ());
 
 /***************************************
   Arrays
