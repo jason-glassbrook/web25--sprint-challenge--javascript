@@ -2,8 +2,10 @@
   TOOLS
 ***************************************/
 
-function heading (content) {
-  console.log (`\n### ${content} ###\n`);
+function heading (content , before = 1, after = 1) {
+  console.log (
+    `${"\n".repeat (before)}### ${content} ###${"\n".repeat (after)}`
+  );
 }
 
 /***************************************

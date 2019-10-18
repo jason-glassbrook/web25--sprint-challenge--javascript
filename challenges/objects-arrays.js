@@ -2,8 +2,10 @@
   TOOLS
 ***************************************/
 
-function heading (content) {
-  console.log (`\n### ${content} ###\n`);
+function heading (content , before = 1, after = 1) {
+  console.log (
+    `${"\n".repeat (before)}### ${content} ###${"\n".repeat (after)}`
+  );
 }
 
 /***************************************
@@ -71,7 +73,7 @@ console.log (dinosaur[0].roar ());
   Arrays
 ***************************************/
 
-heading ("ARRAYS");
+heading ("ARRAYS" , 2);
 
 // Given an array of college graduates.  Complete the following requests using any array method you like
 
@@ -96,7 +98,7 @@ const graduates = [
   Once you have the new array created, sort the universities alphabetically and log the result.
 *******************/
 
-heading ("-> REQUEST 1");
+heading ("-> REQUEST 1" , 0);
 
 const universities = graduates
   .map ((elem) => (elem.university))
@@ -138,7 +140,7 @@ console.log (unisWithUni);
   ADVANCED Array Methods
 ***************************************/
 
-heading ("ADVANCED ARRAY METHODS");
+heading ("ADVANCED ARRAY METHODS" , 2);
 
 // Given this zoo data from around the United States, follow the instructions below.  Use the specific array methods in the requests below to solve the problems.
 
@@ -161,7 +163,7 @@ const zooAnimals = [
   The zoos want to display both the scientific name and the animal name in front of the habitats. Populate the displayNames array with only the animal_name and scientific_name of each animal. displayNames will be an array of strings, and each string should follow this pattern: "Name: Jackal, asiatic, Scientific: Canis aureus."
 *******************/
 
-heading ("-> REQUEST 1");
+heading ("-> REQUEST 1" , 0);
 
 const displayNames = [];
 zooAnimals.forEach (
