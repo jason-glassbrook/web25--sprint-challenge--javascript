@@ -23,6 +23,10 @@ function heading (content , before = 1, after = 1) {
   * The consume function should return the invocation of cb, passing a and b into cb as arguments
 *******************/
 
+const consume = function (a , b , fn) {
+  return (fn (a , b));
+};
+
 /*******************
   Step 2
   ----------------
