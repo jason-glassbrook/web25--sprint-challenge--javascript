@@ -129,7 +129,9 @@ console.log (contactInfo);
 
 heading ("-> REQUEST 3");
 
-const unisWithUni = [];
+const unisWithUni = universities.filter (
+  (elem) => (elem.includes ("Uni"))
+);
 console.log (unisWithUni);
 
 /***************************************
