@@ -37,6 +37,12 @@ const consume = function (a , b , fn) {
   * Create a function named greeting that accepts a first and last name and returns "Hello first-name last-name, nice to meet you!"
 *******************/
 
+const add = (a , b) => (a + b);
+const multiply = (a , b) => (a * b);
+const greet = (firstName , lastName) => (
+  `Hello ${firstName} ${lastName}! Nice to meet you!`
+);
+
 /*******************
   Step 3
   ----------------
