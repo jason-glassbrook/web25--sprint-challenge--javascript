@@ -10,7 +10,7 @@ function heading (content , before = 1, after = 1) {
 
 /***************************************
   Callbacks
-***************************************/  
+***************************************/
 
 heading ("CALLBACKS");
 
@@ -35,7 +35,7 @@ const consume = function (a , b , fn) {
   Create several functions to callback with consume()
   ----------------
   * Create a function named add that returns the sum of two numbers
-  * Create a function named multiply that returns the product of two numbers 
+  * Create a function named multiply that returns the product of two numbers
   * Create a function named greeting that accepts a first and last name and returns "Hello first-name last-name, nice to meet you!"
 *******************/
 
@@ -60,10 +60,16 @@ console.log (consume ("Mary", "Poppins", greeting));
 
 /***************************************
   Closures
-***************************************/ 
+***************************************/
+
+heading ("CLOSURES" , 2);
 
 // Explain in your own words why nestedFunction can access the variable internal.
-// Explanation: 
+
+/*
+  EXPLANATION
+  `nestedFunction()` can access `internal` because all blocks/functions can access information from the scope in which they were defined. `nestedFunction()` can "see" the information that `myFunction()` "sees" and `myFunction()` can "see" the information in global scope where it was defined.
+*/
 
 
 const external = "I'm outside the function";
