@@ -71,6 +71,8 @@ console.log (dinosaur[0].roar ());
   Arrays
 ***************************************/
 
+heading ("ARRAYS");
+
 // Given an array of college graduates.  Complete the following requests using any array method you like
 
 const graduates = [
@@ -94,7 +96,11 @@ const graduates = [
   Once you have the new array created, sort the universities alphabetically and log the result.
 *******************/
 
-const universities = [];
+heading ("-> REQUEST 1");
+
+const universities = graduates
+  .map ((elem) => (elem.university))
+  .sort ();
 console.log(universities);
 
 /*******************
@@ -108,6 +114,8 @@ console.log(universities);
   Log the result of your new array. 
 *******************/
 
+heading ("-> REQUEST 2");
+
 const contactInfo = [];
 console.log(contactInfo);
 
@@ -116,6 +124,8 @@ console.log(contactInfo);
   ----------------
   Find out how many universities have the string "Uni" included in their name. Create a new array called unisWithUni that contains them all. This will be an array of objects. Log the result. 
 *******************/
+
+heading ("-> REQUEST 3");
 
 const unisWithUni = [];
 console.log(unisWithUni);
