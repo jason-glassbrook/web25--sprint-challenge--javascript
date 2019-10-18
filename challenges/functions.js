@@ -39,7 +39,7 @@ const consume = function (a , b , fn) {
 
 const add = (a , b) => (a + b);
 const multiply = (a , b) => (a * b);
-const greet = (firstName , lastName) => (
+const greeting = (firstName , lastName) => (
   `Hello ${firstName} ${lastName}! Nice to meet you!`
 );
 
@@ -48,9 +48,12 @@ const greet = (firstName , lastName) => (
   ----------------
   Check your work by un-commenting the following calls to consume()
 *******************/
-// console.log(consume(2, 2, add)); // 4
-// console.log(consume(10, 16, multiply)); // 160
-// console.log(consume("Mary", "Poppins", greeting)); // Hello Mary Poppins, nice to meet you!
+console.log (consume (2, 2, add));
+// >>> 4
+console.log (consume (10, 16, multiply));
+// >>> 160
+console.log (consume ("Mary", "Poppins", greeting));
+// >>> Hello Mary Poppins, nice to meet you!
 
 
 /***************************************
