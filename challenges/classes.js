@@ -24,10 +24,12 @@ class CuboidMaker
     this.width  = attrs.width;
     this.height = attrs.height;
   }
-  volume () {
+  volume ()
+  {
     return (this.length * this.width * this.height);
   }
-  surfaceArea () {
+  surfaceArea ()
+  {
     return (
       2 * (
         (this.length * this.width)
