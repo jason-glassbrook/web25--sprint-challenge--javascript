@@ -138,6 +138,8 @@ console.log (unisWithUni);
   ADVANCED Array Methods
 ***************************************/
 
+heading ("ADVANCED ARRAY METHODS");
+
 // Given this zoo data from around the United States, follow the instructions below.  Use the specific array methods in the requests below to solve the problems.
 
 const zooAnimals = [
@@ -159,7 +161,16 @@ const zooAnimals = [
   The zoos want to display both the scientific name and the animal name in front of the habitats. Populate the displayNames array with only the animal_name and scientific_name of each animal. displayNames will be an array of strings, and each string should follow this pattern: "Name: Jackal, asiatic, Scientific: Canis aureus."
 *******************/
 
+heading ("-> REQUEST 1");
+
 const displayNames = [];
+zooAnimals.forEach (
+  (elem) => {
+    displayNames.push (
+      `Name: ${elem.animal_name}; Scientific: ${elem.scientific_name}.`
+    )
+  }
+)
 console.log (displayNames);
 
 /*******************
